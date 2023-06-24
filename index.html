@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trying</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=&display=swap');
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <h2>Library System</h2>
+        </div>
+        <div class="links" id="NavBar">
+            <ul class="nav-links">
+                <li><a href="#books">Books</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="books">
+        <div class="table-div">
+            <div class="library">
+                <h2>Books</h2>
+            </div>
+            <table class="table">
+                <thead>
+                    <th class="th-heading">Book ID</th>
+                    <th class="th-heading">Title</th>
+                    <th class="th-heading">Author</th>
+                    <th class="th-heading">Genre</th>
+                    <th class="th-heading">Availability</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td> <a href="#"> Ocean </a>  <br> Publicaiton Date 2000 <br> Page cont 100 <br> ISBN 123-7759699423</td>
+                        <td>Jack Saly</td>
+                        <td>Rom-Com</td>
+                        <td class="avl"><p>Available</p></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="#"> Greed </a> <br> Publicaiton Date 2008 <br> Page count 120 <br> ISBN 123-7759600423</td>
+                        <td>Ally Sensi</td>
+                        <td>Horror</td>
+                        <td class="Navl"><p>Not Available</p></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="#"> My Life </a> <br> Publicaiton Date 2012 <br> Page count 321 <br> ISBN 103-8759600323</td>
+                        <td>Elon Musk</td>
+                        <td>Inspirational</td>
+                        <td class="avl"><p>Available</p></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="#"> Dog Parent </a><br> Publicaiton Date 2018 <br> Page count 80 <br> ISBN 003-8789600323</td>
+                        <td>Nithor Crone</td>
+                        <td>Informational</td>
+                        <td class="avl"><p>Available</p></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="#"> Tomic Habits </a> <br> Publicaiton Date 2007 <br> Page count 320 <br> ISBN 113-6689600323</td>
+                        <td>James Clear</td>
+                        <td>Self-help book</td>
+                        <td class="Navl"><p>Not Available</p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="register">
+        <div class="registration-form">
+            <div class="library">
+                <h2>Register</h2>
+            </div>
+            <form action="/action_page.php" class="form">
+                <label for="Fname">First Name</label><br>
+                <input type="text" id="Fname" required><br>
+                <label for="Lname">Last Name</label><br>
+                <input type="text" id="Lname" required><br>
+                <label for="DOB">Date Of Birth</label><br>
+                <input type="date" id="DOB" required><br>
+                <label for="age">Age</label><br>
+                <input type="number" id="age" min="5" max="100" required><br>
+                <label for="mail">Email</label><br>
+                <input type="email" id="mail" required><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" required><br>
+                <label for="Cpassword">Confirm Password</label><br>
+                <input type="password" id="Cpassword" required><br>
+                <input type="submit" value="Register" id="submit" style="cursor: pointer;">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
